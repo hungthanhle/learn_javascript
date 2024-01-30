@@ -1,24 +1,10 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Block first request:  
+http://localhost:3000/posts.json?debugger=true  
+http://localhost:3000/posts.json?pry=true  
+  
+Block next requests ?:  
+http://localhost:3000/posts.json  
+  
+binding.pry - NOT BLOCK next request, mũi tên lên để tiếp tục xử lý first request  
+debugger - BLOCK next request  
+  

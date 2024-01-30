@@ -3,6 +3,13 @@ class PostsController < ApplicationController
 
   # GET /posts or /posts.json
   def index
+    if params[:debugger]
+      debugger
+    end
+
+    if params[:pry]
+      binding.pry
+    end
     @posts = Post.all
   end
 
